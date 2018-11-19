@@ -25,12 +25,6 @@ def detect_edge(image_file_path):
     gray_img =  cv2.cvtColor(orig_img,cv2.COLOR_BGR2GRAY).astype(float)
     cv2.imshow('gray_img', gray_img)
     
-    edge_x = cv2.Sobel(gray_img,cv2.CV_64F,1,0,ksize=3)
-    cv2.imshow('sobel_x', edge_x)
-    
-    edge_y = cv2.Sobel(gray_img,cv2.CV_64F,0,1,ksize=3)
-    cv2.imshow('sobel_y', edge_y)
-
     sobel = cv2.Sobel(gray_img,cv2.CV_64F,1,1,ksize=3)
     cv2.imshow('sobel', sobel)
 
