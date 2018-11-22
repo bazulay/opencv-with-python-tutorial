@@ -1,0 +1,28 @@
+HELP
+====
+python 01-template-matching.py  --help
+
+
+people
+======
+python 01-template-matching.py  --image=../images/people.jpg  --template=../images/people_face_to_find.jpg
+python 01-template-matching.py  --image=../images/people.jpg  --template=../images/people_face_to_find.jpg --scan-method=all 
+python 01-template-matching.py  --image=../images/people.jpg  --template=../images/people_face_to_find.jpg --scan-method=all --multiple
+
+
+candies
+=======
+python 01-template-matching.py  --image=../images/candies_top_view.jpg   --template=../images/candies_top_view_template.jpg
+python 01-template-matching.py  --image=../images/candies_top_view.jpg   --template=../images/candies_top_view_template.jpg --multiple
+python 01-template-matching.py  --image=../images/candies_top_view.jpg   --template=../images/candies_top_view_template.jpg --multiple --threshold=0.95
+python 01-template-matching.py  --image=../images/candies_top_view.jpg   --template=../images/candies_top_view_template.jpg --multiple --threshold=0.99
+
+
+space
+=====
+
+python 01-template-matching.py  --image=../images/space-invaders.png  --template=../images/space-invaders_t1.png
+python 01-template-matching.py  --image=../images/space-invaders.png  --template=../images/space-invaders_t1.png --multiple 
+python 01-template-matching.py  --image=../images/space-invaders.png  --template=../images/space-invaders_t1.png --scan-method=all
+
+the same with t2
